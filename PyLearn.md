@@ -150,4 +150,37 @@ for word in array:           # 外循环，依次遍历array里的单词
         if char == 'a':      # 当字符等于a时中断本次内循环，继续执行下次内循环
             continue
         print(char)          # 所以会打印出除a之外的所有字符
+```   
+### in
+&emsp;in 关键字是判断是否包含
+```python
+a = [1,2,3]
+print(1 in a)  #输出True,因为a包含了1
+```
+### is
+&emsp;is 关键字是判断内存地址,也可以理解为判断是否为同一对象
+```python
+a = User('132')
+b = a
+print(a is b) # 打印的将是True，因为b = a，所以a is b
+```  
+### pass
+&emsp;pass 关键字作用相当于占位符，例子：
+```python
+def ex():
+    pass
+```
+例如例子中的ex方法，我只想声明一个空方法不做任何实现，但假如这里没有任何代码的话不符合python的语法会报错，
+所以就有了pass关键字，表示是个占位符
+### global  
+&emsp;global 关键字是为了在函数里改变全局变量的值而存在的  
+```python
+hehe=6
+def f():
+    hehe=2
+    print(hehe) #这里打印的将是2，优先使用局部变量
+
+def next():
+    global hehe #这里的global声明就是使用全局的那个hehe变量
+    print(hehe)
 ```
