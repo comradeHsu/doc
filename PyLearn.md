@@ -183,4 +183,24 @@ def f():
 def next():
     global hehe #这里的global声明就是使用全局的那个hehe变量
     print(hehe)
+```  
+### as
+&emsp;as 类似于数据库中的as作用，为导入的库取个别名方便使用
+```python
+import time as t
+
+t.sleep(2) #等同于time.sleep(2)
+```
+### True & False
+&emsp;True 和 False是python中的一种bool数据类型，用来表示真和假  
+### None
+&emsp;空对象，空值是Python里一个特殊的值,类似于于Java中的NULL
+### assert
+&emsp;assert语句是一种插入调试断点到程序的一种便捷的方式。assert语句用
+来声明某个条件是真的,当assert语句失败的时候，会引发一AssertionError，
+所以结合try...except我们就可以处理这样的异常。
+```python
+data = [1,2,3]
+assert len(mylist) is not None  # 用assert判断列表不为空，正确无返回
+assert len(mylist) is None     # 用assert判断列表为空,在这里由于条件为False将引发AssertionError异常
 ```
